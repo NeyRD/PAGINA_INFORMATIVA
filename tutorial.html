@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paginaweb.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png"></a>
+            </div>
+
+            <div class="submenu">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="frontenp.html">front End</a></li>
+                    <li><a href="backenp.html">Back End</a></li>
+                    <li><a href="#">Crea tu Pagina</a></li>
+                    <li><a href="https://baetica.com/blog/desarrollo-web/">Blog</a>
+                </ul>
+            </div>
+            <div class="donacion">
+                <a href="https://paypal.me/AngelMatosD?country.x=DO&locale.x=es_XC"><button>Donaciones</button></a>
+            </div>
+            <div class="menu">
+                <img src="img/menu.png" id="icono_menu">
+            </div>
+    </header>
+
+
+    <div class="cabeza">
+        <div class="center">
+            <h4>Tutorial</h4>
+        </div>
+        <div class="center-1" >
+            <h5>DESPLÁCESE HACIA <br> ABAJO</h5>
+        </div>
+        <a href="#abajo"><span><i class="fa-solid fa-angle-down"></i></span></a>
+        <div class="abajo" id="abajo">
+            <h4>visual</h4>
+        
+        </div>
+    
+    
+    <div class="pag_inicio">
+       <label for="ney">
+        <div class="contenido">
+            <div class="foto-1"  data-aos="fade-up"
+            data-aos-anchor-placement="center-center"  data-aos-duration="1000">
+            <h4>Entrar a tu carpeta de index.html y poner signo de exclamación (!)</h4>
+            <img src="tutorial/foto/foto1.png" alt="" > 
+            </div> 
+        
+        
+        
+
+            <div class="foto-2" data-aos="fade-left" data-aos-duration="2000">
+                <h4>Enlazar nuestro HTML con CSS</h4>
+                <img src="tutorial/foto/foto3.png" alt="">    
+            </div> 
+            <div class="foto-3" data-aos="zoom-in-left" data-aos-duration="2000">
+                <img src="tutorial/foto/fotonew.png" alt="">      
+            </div>  
+            <div class="foto-4" data-aos="zoom-in-right" data-aos-duration="2000">
+                <h4>crear nuestro menu de navegacion de nuestra pagina como en el ejemplo.</h4>
+                <img src="tutorial/foto/foto4.png" alt="">    
+            </div> 
+        
+            <div class="foto-5"  data-aos="fade-down"
+            data-aos-anchor-placement="center-center"  data-aos-duration="2000">
+             
+                <img src="tutorial/foto/foto2.png" alt="" > 
+                <h4>Dar stilo a nustro menu de navegacion en css </h4>               
+            </div> 
+            <div class="foto-6"  data-aos="fade-down-left"  data-aos-duration="2000">
+                <h4>Agregamos cuerpo a nuestra pagina</h4>
+                <img src="tutorial/foto/foto5.png" alt="" > 
+            </div> 
+            <div class="foto-7"  data-aos="fade-down-left"  data-aos-duration="2000">
+                
+                <img src="tutorial/foto/foto6.png" alt="" > 
+                <h4>Le damos estilo a nuestro cuerpo</h4>
+            </div> 
+            <div class="foto-8"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                <h4>El resultado de nuestra pagina sencilla</h4>
+                <img src="tutorial/foto/foto7.png" alt="" > 
+            </div>
+        </div>                
+    </div>            
+
+    <div class="final" >
+        <div class="tex">
+            <p>  <b>Aqui</b> le dejamos los pasos basicos, para hacer una <b> "Pagina Web" no te limites y espande tus lismites...</b> </p>
+        </div>
+    </div>
+
+    <div id="button-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <script>
+        document.getElementById("icono_menu").addEventListener("click", menu_menu);
+        function menu_menu(){
+            document.querySelector(".submenu").classList.toggle("menu_menu")
+        }
+
+        document.getElementById("button-up").addEventListener("click", scrollUp);
+
+        function scrollUp(){
+        var currentScroll = document.documentElement.scrollTop;
+            if (currentScroll > 0){
+                window.requestAnimationFrame(scrollUp);
+                window.scrollTo (0, currentScroll - (currentScroll / 10));
+            }
+        }  
+
+        buttonUP = document.getElementById("button-up");
+
+    window.onscroll = function(){
+
+        var scroll = document.documentElement.scrollTop;
+
+        if (scroll > 250){
+            buttonUP.style.transform = "scale(1)";
+        } else if (scroll < 100){
+            buttonUP.style.transform = "scale(0)";
+        }
+    }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>

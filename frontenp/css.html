@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/paginaweb.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+               <a href="/index.html"><img src="/img/logo.png" alt=""></a>
+            </div>
+
+            <div class="submenu">
+                <ul>
+                    <li><a href="/inicio.html">Inicio</a></li>
+                    <li><a href="/frontenp.html">Front End</a></li>
+                    <li><a href="/backenp.html">Back End</a></li>
+                    <li><a href="/tutorial.html">Crea tu Pagina</a></li>
+                    <li><a href="https://baetica.com/blog/desarrollo-web/">Blog</a>
+                </ul>
+            </div>
+            <div class="donacion">
+                <a href="https://paypal.me/AngelMatosD?country.x=DO&locale.x=es_XC"><button>Donaciones</button></a>
+            </div>
+            <div class="menu">
+                <img src="/img/menu.png" id="icono_menu">
+            </div>
+    </header>
+
+    <main class="contenedor_fron">
+        <div class="front">
+            <div class="text_3">
+                    <div class="cabezera">
+                        <img src="/img/cabecera---milocalfunciona-css-carrusel---1400x400px.png" alt="">
+                    </div>    
+                <h2> Que es una Propiedad</h2>
+                <p >Una propiedad es la modificación o modificaciones concretas que aplicas en la hoja de estilos CSS a un elemento de tu web mediante un selector. Por ejemplo, al selector llamado #boton (que da estilo a un tipo concreto de botón dentro de mi sitio) le puedo aplicar las siguientes propiedades de color, ancho, relleno y borde:
+                    <br>
+                    <br>
+                    
+                        <li>background-color: #ccc; (color de fondo gris especificado en código hexadecimal)</li>
+                        <li>color: #fff; (color del texto dentro de la caja en blanco)</li>
+                        <li>width: 100px;(ancho de 100 píxeles)</li>
+                        <li>padding: 20px; (relleno o margen interior de 20 píxeles por cada lado)</li>
+                        <li>border: 1px solid #000; (borde de color negro continuo de 1 píxel de grosor)</li>
+                        <li>border-radius: 5px; (redondeado de un ángulo de 5 píxeles en todas las esquinas de la caja)</li>
+     
+                </p>
+                <br>
+                <h2> Para Texto</h2>
+                <p>Las propiedades y sus atributos más comunes para modificar la apariencia de tus textos web son las siguientes:
+                    <br>
+                    <br>
+                    <b>font-family:</b> Establece una familia o fuente tipográfica.
+                    <br>
+                    <b>font-style:</b> Estilo normal, cursiva u oblicua. Atributos [ normal | italic | oblique ]
+                    <br>
+                    <b>font-variant:</b> Convierte las minúsculas en mayúsculas pero en tamaño menor. Atributos [ normal | small-caps ]
+                    <br>
+                    <b>font-weight:</b> Grosor de la tipografía especificado en medidas de 100 a 900.
+                    <br>
+                    <b>font-size:</b> tamaño o cuerpo de letra especificado en píxeles (px).
+                    <br>
+                    <b>text-indent:</b> cantidad de desplazamiento lateral de la primera línea del texto, expresado en px.
+                    <br>
+                    <b>text-align:</b> alineación del texto. Atributos [ left | right | center | justify ]
+                    <br>
+                    <b>text-decoration:</b> aplica efectos de subrayado, tachado, parpadeo. Atributos [ none | [ underline || overline || line-through || blink ] ]
+                    <br>
+                    <b>letter-spacing:</b> espaciado entre caracteres especificado en px.
+                    <br>
+                    <b>text-transform:</b> para transformar los textos a mayúsculas o minúsculas [ capitalize | uppercase | lowercase | none ].
+                    <br>
+                    <b>line-height:</b> interlineado entre renglones de texto expresado en px.
+                    <br>
+                    <b>vertical-align:</b> alineación vertical del texto. Atributos [ baseline | sub | super | top | text-top | middle | bottom | text-bottom | <porcentaje> | <longitud> ]
+                </p>
+
+                <div class="cabezera_1">
+                    <img src="/img/css.jpg" alt="">
+                </div>
+                <div class="cabezera_2">
+                    <h2>Para elementos gráficos de la web</h2>
+                    <p> <li><b> width:</b> ancho de un elemento o imagen. Puede definirse en píxeles (px), unidades em (em) y porcentajes (%).
+                        Ej.: #content {width:960px;}<br></li>
+                        <li><b>height:</b> altura de un elemento o imagen. Igual que la anterior.
+                        Ej.: #header height: 250px;<br></li>
+                        <li><b>background-color:</b> color de fondo de un elemento. Se expresa en valor hexadecimal con # y seis caracteres. Ej.: #boton {background-color: #1CBACC;} <br></li>
+                        <li><b>background-image:</b> imagen de fondo para un elemento. 
+                        Ej.: #content {background-image: url(«https://www.aulacm.com/fondo.jpg);} <br></li>
+                        <li><b>background-repeat:</b> repetición o no de la imagen dentro del fondo (ideal para crear patterns o fondos con texturas). Se puede repetir en x (en horizontal) o en y (en vertical).
+                        Ej.: #content {background-repeat: repeat-x;} <br></li>
+                        <li><b>background-position:</b> posición de la imagen dentro del fondo. Se puede definir al centro, izquierda o derecha. También con píxeles y porcentajes.
+                        Ej.: #content {background-position: center;} <br></li>
+                        <li><b>border:</b> borde de un elemento o imagen. Tiene 3 parámetros: tipo de borde (liso, punteado, rayas, etc), grosor (expresado en píxeles) y color (expresado en valor hexadecimal). También puede definirse sin borde (none).
+                        Ej.: #boton {border: solid 1px #000000} <br></li>
+                        <li><b>display:</b> modo en que se muestra un elemento o imagen o no mostrarlo nunca. Tiene diversos valores, los más comunes son: mostrar elementos en bloque (block),<br>
+                        <li><b>z-index:</b> posición de un elemento o imagen en el eje z (para poner elementos tapando a otros elementos)</li>
+                    </p>
+                    <div class="animation">
+                        <img src="/img/arriba abajo.jpg" alt="">
+                    </div>    
+                </div>    
+                    <br>
+                    <br>
+                    <h2>Para añadir espacios o márgenes</h2>
+                    <p>
+                        En sendos casos, puedes expresar el valor en píxeles pero también en porcentajes. Los porcentajes son ideales para definir espacios proporcionales, de modo que no haya una distancia fija entre elementos, sino que en función del tamaño de la pantalla o dispositivo, los elementos se coloquen proporcionalmente.
+                        Esta es la clave para definir tamaños de elementos que sean responsive (que se adapten automáticamente a todos los dipositivos). De este modo, una caja con un ancho (width) al 100% siempre ocupará el 100% de la pantalla, ya sea una pantalla grande o un smartphone.
+                        Además, tanto el margin como el padding pueden definirse para una dirección concreta arriba, derecha, abajo o izquierda:
+                        <br>
+                        <br>
+                            <li><b>margin-top:</b> margen hacia arriba <br></li>
+                            <li><b>margin-right:</b> margen hacia la derecha <br></li>
+                            <li><b>margin-bottom:</b> margen hacia abajo <br></li>
+                            <li><b>margin-left:</b> margen hacia la izquierda <br></li>
+                            <li><b>padding-top:</b> relleno desde arriba hacia adentro <br></li>
+                            <li><b>padding-right:</b> relleno desde la derecha hacia adentro <br></li>
+                            <li><b>padding-bottom:</b> relleno desde abajo hacia adentro <br></li>
+                            <li><b>padding-left:</b> relleno desde la izquierda hacia adentro <br></li>
+                    </p>
+            </div>    
+        </div>
+        <div class="tarjetas">
+            <div class="carb c1">
+                <div class="icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="desar">
+                    <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+                    <a href="/frontenp/html.html"><input type="button" value="Entrar"></a>
+                </div>
+            </div>
+            <div class="carb c3">
+                <div class="icon">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="desar">
+                    <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                    <a href=""><input type="button" value="Entrar"></a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="cont_foter">
+            <div class="inf_foter">
+                <div class="one one_1">
+                    <img src="/img/logo.png" alt="">
+                    <p>Te ayudamos a adquirir una pequeña base en el desarrollo web. </p>
+                </div>
+                <div class="one ">
+                    <h1>Conct-Inf</h1>
+                    <p>Santo Domingo-Republica Dominicana</p>
+                    <a href="#"><p><i class="fa-solid fa-envelope"></i>angel_matos21@hotmail.com</p></a>
+                    <a href="https://wa.me/18095045300"><p><i class="fa-solid fa-phone"></i>809-504-5300</p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("icono_menu").addEventListener("click", menu_menu);
+        function menu_menu(){
+            document.querySelector(".submenu").classList.toggle("menu_menu")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progamacion</title>
+    <link rel="stylesheet" href="paginaweb.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <div class="submenu">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="frontenp.html">Front End</a></li>
+                    <li><a href="backenp.html">Back End</a></li>
+                    <li><a href="tutorial.html">Crea tu Pagina</a></li>
+                    <li><a href="https://baetica.com/blog/desarrollo-web/">Blog</a>
+                </ul>
+            </div>
+            <div class="donacion">
+                <a href="https://paypal.me/AngelMatosD?country.x=DO&locale.x=es_XC"><button>Donaciones</button></a>
+            </div>
+            <div class="menu">
+                <img src="img/menu.png" id="icono_menu">
+            </div>
+    </header>
+
+    <main>
+        <div class="conteiner" >
+            <div class="text">
+                <h2 class="bie"> ¡BIENVENIDOS </h2>
+                <p>Te damos la bienvenida aqui podras conocer los conceptos basico del frontenp <br> y Backenp  lo necesario para poder crear tu prodia <b>PAGINA WEB</b>  sencilla <br> no pierdas mas el tiempo y entra Ya. </p>
+                <a href=" inicio.html"><input type="button" class="btn" value="ENTRAR"></a>
+            </div>
+            <div class="relleno">
+                <img src="img/gif.gif" alt="">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("icono_menu").addEventListener("click", menu_menu);
+        function menu_menu(){
+            document.querySelector(".submenu").classList.toggle("menu_menu")
+        }
+
+    </script>
+</body>
+</html>
